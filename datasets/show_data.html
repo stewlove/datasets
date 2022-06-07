@@ -1,0 +1,52 @@
+<!--
+    Stewart Lovell
+    3/8/2022
+    HTML structure for the covid data and statistics webpage
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="../datasets/data.js"></script>
+    </head>
+    <body>
+    <div class="covidPage">
+        <div id="left">
+            <section>
+                <h1>Covid Dataset</h1>
+                <p id="dataset-info">
+                    The data set contains daily reports of Covid-19 cases and deaths in countries worldwide.
+                    The data also shows the country’s population and the number of cases per 100,000 people
+                    on a rolling 14-day average.
+                </p>
+            </section>
+            <section>
+                <h3 id="location-info"></h3>
+                <p id="day">Day: </p>
+                <p id="month">Month: </p>
+                <p id="year">Year: </p>
+                <p id="cases">Cases: </p>
+                <p id="deaths">Deaths: </p>
+                <p id="population">Population: </p>
+                <p id="rate">Rate: </p>
+                <button id="previous">Prev</button>
+                <button id="next">Next</button>
+            </section>
+        </div>
+        <div id="right">
+            <section>
+                <h3>Covid Facts (Data up to the end of 2020)</h3>
+                <ul>
+                    <li id="fact-one"></li>
+                    <li id="fact-two"></li>
+                    <li id="fact-three"></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    </body>
+    <script src="program.js"></script>
+</html>

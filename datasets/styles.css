@@ -1,0 +1,44 @@
+/*
+ * Stewart Lovell
+ * 3/8/2022
+ * Styles for the covid data and statistics webpage
+ */
+
+.covidPage
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    margin: 200px auto auto;
+
+    grid-template-areas:
+    "left  right"
+}
+
+#left
+{
+    grid-area: left;
+}
+
+#right
+{
+    grid-area: right;
+}
+
+section
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+p, h1, h3, button, li
+{
+    margin: 5px;
+}
+
+body
+{
+    background-image: url("covid.png");
+    background-repeat: no-repeat;
+}
